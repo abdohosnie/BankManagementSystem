@@ -22,31 +22,7 @@ public class Employee extends User {
         System.out.println("Personal information updated successfully.");
     }
 
-    public void createClientAccount(String clientID, String clientFirstName, String clientLastName, String accountNumber, String username, String password, String newPhoneNumber, String accountState, String typeOfAccount, double balance) {
-        try {
-            // Perform validations if needed
-
-            Client newClient = new Client(clientID, clientFirstName, clientLastName, accountNumber, username, password, newPhoneNumber, accountState, typeOfAccount, balance);
-            // Add the new client to the list of clients
-            // clients.add(newClient);
-
-            System.out.println("Client account created successfully.");
-        } catch (IllegalArgumentException e) {
-            System.out.println("Error: " + e.getMessage());
-        }
-    }
-
-    public void editClientAccount(Client client, String newPhoneNumber) {
-        // Implement edit client to change
-    }
-
-    public void searchClient(String searchQuery) {
-        // Implement search client logic based on the searchQuery
-    }
-
-    public void deleteClientAccount(Client client) {
-        // Implement logic to delete a client account
-    }
+//
 
     // You can add other methods as needed for the Employee class
 }
