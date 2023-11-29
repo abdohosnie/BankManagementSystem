@@ -22,11 +22,11 @@ public class Employee extends User {
         System.out.println("Personal information updated successfully.");
     }
 
-    public void createClientAccount(String clientID, String clientFirstName, String clientLastName, String accountNumber, String username, String password, String telephoneNumber, String accountState, String typeOfAccount, double balance) {
+    public void createClientAccount(String clientID, String clientFirstName, String clientLastName, String accountNumber, String username, String password, String newPhoneNumber, String accountState, String typeOfAccount, double balance) {
         try {
             // Perform validations if needed
 
-            Client newClient = new Client(clientID, clientFirstName, clientLastName, accountNumber, username, password, telephoneNumber, accountState, typeOfAccount, balance);
+            Client newClient = new Client(clientID, clientFirstName, clientLastName, accountNumber, username, password, newPhoneNumber, accountState, typeOfAccount, balance);
             // Add the new client to the list of clients
             // clients.add(newClient);
 
@@ -36,8 +36,8 @@ public class Employee extends User {
         }
     }
 
-    public void editClientAccount(Client client, String newTelephone) {
-
+    public void editClientAccount(Client client, String newPhoneNumber) {
+        // Implement edit client to change
     }
 
     public void searchClient(String searchQuery) {

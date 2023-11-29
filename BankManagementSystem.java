@@ -56,17 +56,17 @@ public class BankManagementSystem {
 
     }
 
-    private void searchClient() {
-
-    }
-
     private void deleteClientAccount() {
 
     }
 
     private Client findClientByID(String clientID) {
-
-        return null;
+        for (Client client : clients) {
+            if (client.getID().equals(clientID)) {
+                return client;
+            }
+        }
+        return null;  // Return null if no matching client is found
     }
 }
 

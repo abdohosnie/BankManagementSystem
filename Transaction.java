@@ -3,7 +3,7 @@ package BankManagementSystem;
 import java.time.LocalDateTime;
 
 public class Transaction {
-    private final String transactionType;
+    private final String transactionType; // (Deposit or Withdrawal or Transfer or Payment or Interest or Fee or Loan Payment)
     private final double amount;
     private final LocalDateTime timestamp;
 

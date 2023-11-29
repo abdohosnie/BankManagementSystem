@@ -1,8 +1,8 @@
 package BankManagementSystem;
 
 public class Account {
-    private final String accountNumber;
-    private final String type;
+    private final String accountNumber; // (Unique)
+    private final String type; // (Savings or Current)
     private double balance;
 
     public Account(String accountNumber, String type, double balance) {
