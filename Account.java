@@ -11,16 +11,5 @@ public class Account {
         this.balance = balance;
     }
 
-    public void deposit(double amount) {
-
-    }
-
-    public void withdraw(double amount) {
-
-    }
-
     // You can add other methods as needed for the Account class
 }
-
-
-
