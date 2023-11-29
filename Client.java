@@ -4,29 +4,33 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Client extends User {
-    private final String accountNumber;
+    private final String accountNumber; // (unique)
     private final String username;
     private final String password;
-    private String telephoneNumber;
-    private final String accountState;
-    private final String typeOfAccount;
+    private String phoneNumber;
+    private final String accountState; //  (Active or Closed)
+    private final String typeOfAccount; // (Savings or Current)
     private double balance;
     private final List<Account> accounts;
 
-    public Client(String ID, String firstName, String lastName, String accountNumber, String username, String password, String telephoneNumber, String accountState, String typeOfAccount, double balance) {
+    public Client(String ID, String firstName, String lastName, String accountNumber, String username, String password, String phoneNumber, String accountState, String typeOfAccount, double balance) {
         super(ID, firstName, lastName);
         this.accountNumber = accountNumber;
         this.username = username;
         this.password = password;
-        this.telephoneNumber = telephoneNumber;
+        this.phoneNumber = phoneNumber;
         this.accountState = accountState;
         this.typeOfAccount = typeOfAccount;
         this.balance = balance;
         this.accounts = new ArrayList<>();
     }
 
-    public void editPersonalInformation(String newTelephoneNumber) {
+    public void editPersonalInformation(String newPhoneNumber) {
 
+    }
+
+    public String getID() {
+        return ID;
     }
 
     public void displayAccountDetails() {
