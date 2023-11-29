@@ -14,32 +14,35 @@ public class BankManagementSystem {
     }
 
     public static void main(String[] args) {
-
+        BankManagementSystem bankSystem = new BankManagementSystem();
+        bankSystem.initializeSystem();
+        bankSystem.handleUserAuthentication();
     }
 
     public void initializeSystem() {
-
-
+        // Load client and employee data from files
+        // You may need to implement file reading logic here
     }
 
     public void handleUserAuthentication() {
-//        Scanner scanner = new Scanner(System.in);
-//
-//        System.out.println("Enter username: ");
-//        String username = scanner.next();
-//
-//        System.out.println("Enter password: ");
-//        String password = scanner.next();
+        Scanner scanner = new Scanner(System.in);
 
+        System.out.println("Enter username: ");
+        String username = scanner.next();
+
+        System.out.println("Enter password: ");
+        String password = scanner.next();
+
+        // Implement authentication logic based on the entered username and password
     }
 
     private void showEmployeeMenu(Employee employee) {
         Scanner scanner = new Scanner(System.in);
 
-
+        // Implement the employee menu based on the provided requirements
     }
 
-    private void createClientAccount() {
+    public void createClientAccount() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter client ID: ");
@@ -50,14 +53,21 @@ public class BankManagementSystem {
 
         System.out.println("Enter client last name: ");
         String clientLastName = scanner.next();
+
+        // Client newClient = new Client(clientID, clientFirstName, clientLastName);
+        // clients.add(newClient);
     }
 
-    private void editClientAccount() {
-
+    public void editClientAccount(Client client, String newPhoneNumber) {
+        // Implement logic to edit client account information
     }
 
-    private void deleteClientAccount() {
+    public void searchClient(String searchQuery) {
+        // Implement logic to search for a client based on the searchQuery
+    }
 
+    public void deleteClientAccount(Client client) {
+        // Implement logic to delete a client account
     }
 
     private Client findClientByID(String clientID) {
@@ -69,7 +79,3 @@ public class BankManagementSystem {
         return null;  // Return null if no matching client is found
     }
 }
-
-
-
-
