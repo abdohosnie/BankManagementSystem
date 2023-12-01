@@ -27,4 +27,4 @@ To use the bank management system, follow these steps:
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone <https://github.com/AbdoHosnie/BankManagementSystem>
