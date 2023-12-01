@@ -7,8 +7,7 @@ A Java project for managing bank operations, client data, and employee functions
 - [Features](#features)
 - [Usage](#usage)
 - [Installation](#installation)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Overview
 This project implements a bank management system with features such as client account management, employee functions, and transactions.
